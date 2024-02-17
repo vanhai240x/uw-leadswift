@@ -36,6 +36,10 @@
     <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
 
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
     <link rel="stylesheet" href="./css/index.css" />
 
     <title>Leadswift</title>
@@ -196,23 +200,23 @@
           <p class="text-lg text-center mb-16 wow fadeInUp" data-wow-delay="0.75s">Holen Sie Ihre Interessenten da ob, wo die sich aufhalten. <br>Auf persönlichere und effizientere Art und weise</p>
           <button class="btn btn-gradient block mx-auto mb-14 text-xl wow fadeInUp" data-wow-delay="1s">kostenlos testen</button>
           <div class="cards text-center">
-            <div class="item flex flex-col justify-center items-center text-white">
+            <div class="stackCard item flex flex-col justify-center items-center text-white">
               <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Zeitersparnis durch Automatisierung:</h4>
               <p class="text-lg">Keine Notwendigkeit, eigene Websites oder Funnel zu entwerfen.</p>
             </div>
-            <div class="item flex flex-col justify-center items-center text-white">
+            <div class="stackCard item bg-1 flex flex-col justify-center items-center text-white">
               <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Höhere Konversionsraten</h4>
               <p class="text-lg max-w-[682px] mx-auto">Nutzung von WhatsApp erhöht die Wahrscheinlichkeit, dass Leads zu Kunden werden, durch persönlichere Interaktion.</p>
             </div>
-            <div class="item flex flex-col justify-center items-center text-white">
+            <div class="stackCard item bg-2 flex flex-col justify-center items-center text-white">
               <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Niedrigere Abbruchraten</h4>
               <p class="text-lg max-w-[658px] mx-auto">Erinnerungsfunktionen reduzieren die Wahrscheinlichkeit, dass Interessenten den Kontaktvorgang abbrechen.</p>
             </div>
-            <div class="item flex flex-col justify-center items-center text-white">
+            <div class="stackCard item bg-3 flex flex-col justify-center items-center text-white">
               <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Keine zusätzlichen Hosting- oder Domainkosten:</h4>
               <p class="text-lg">Da der Service über WhatsApp läuft, entfallen die Kosten für Webhosting und Domain-Anmeldung.</p>
             </div>
-            <div class="item flex flex-col justify-center items-center text-white">
+            <div class="stackCard item flex flex-col justify-center items-center text-white">
               <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]" style="word-break: break-word;">Flexible Anwendungsmöglichkeiten</h4>
               <p class="text-lg">Da der Service über WhatsApp läuft, entfallen die Kosten für Webhosting und Domain-Anmeldung.</p>
               <button class="btn btn-gradient mt-6">kostenfrei testen</button>
@@ -636,24 +640,5 @@
     <script src="./js/slick/slick.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
-    <script>
-      $('.slider-mobile').slick({
-        dots: true,
-        arrows: false,
-        centerMode: true,
-        slidesToShow: 1,
-        centerPadding: 'calc((100% - 890px) / 2)',
-        // autoplay: true,
-        autoplaySpeed: 5000,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              centerPadding: 'calc((100% - 725px) / 2)',
-            }
-          },
-        ]
-      });
-    </script>
   </body>
 </html>

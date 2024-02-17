@@ -218,6 +218,11 @@
   background: #fff;
   border: 1px solid #1A2032;
   border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: -5px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(2px, -2px);
 }
 .btn.btn-gradient {
   color: #fff;
@@ -453,6 +458,17 @@
   border-radius: 16px;
   padding: 55px 0px;
   margin: 0 auto 20px;
+  transform-origin: 50% -160%;
+  position: relative;
+}
+#homepage .user .cards .item.bg-1 {
+  background: #1A2032;
+}
+#homepage .user .cards .item.bg-2 {
+  background: #F8A4D8;
+}
+#homepage .user .cards .item.bg-3 {
+  background: #6C63FF;
 }
 #homepage .user .cards .item .btn {
   height: 60px;

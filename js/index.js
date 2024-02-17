@@ -1,90 +1,5 @@
-$(document).ready(() => {
-  $(".slider-talent").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-  $(".slider-insights").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-  $(".client-say .slider-say").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-  });
-  scroolDown();
-
-  new WOW().init();
-});
-
-function scroolDown() {
-  $(window).scroll(function () {
-    $(".visible-bottom-to-top").each(function () {
-      let pos = $(this).offset().top;
-      let winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide-bottom-to-top");
-      }
-    });
-    $(".visible-top-to-bottom").each(function () {
-      let pos = $(this).offset().top;
-      let winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide-top-to-bottom");
-      }
-    });
-    $(".visible-left-to-right").each(function () {
-      let pos = $(this).offset().top;
-      let winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide-left-to-right");
-      }
-    });
-    $(".visible-right-to-left").each(function () {
-      let pos = $(this).offset().top;
-      let winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide-right-to-left");
-      }
-    });
-  });
-}
-
 // Collapse
 let coll = document.getElementsByClassName("collapsible");
-
 for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -98,33 +13,49 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 // Homepage
-$("#homepage .our-specialist .container .left .items .item").hover(function (
-  e
-) {
-  $("#homepage .our-specialist .container .left .items .item").removeClass(
-    "active"
-  );
-  $(this).addClass("active");
-  let img = $(this).attr("attr-img");
-  let title = $(this).attr("attr-title");
-  let content = $(this).attr("attr-content");
-  $("#homepage .our-specialist .container .right").css(
-    "background-image",
-    `url('${img}')`
-  );
-  $("#homepage .our-specialist .container .right .title").text(title);
-  $("#homepage .our-specialist .container .right .content").text(content);
+new WOW().init();
+$(".slider-mobile").slick({
+  dots: true,
+  arrows: false,
+  centerMode: true,
+  slidesToShow: 1,
+  centerPadding: "calc((100% - 890px) / 2)",
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        centerPadding: "calc((100% - 725px) / 2)",
+      },
+    },
+  ],
 });
-
-// Meet the team
-$("#meet-the-team .find-out .items .item .btn-yellow").click(() => {
-  $("#meet-the-team .popup").addClass("active");
-});
-$("#meet-the-team .popup .wrapper .close").click(() => {
-  $("#meet-the-team .popup").removeClass("active");
-});
-$("#meet-the-team .popup").click((e) => {
-  if ($(e.target).attr('class') === "popup active") {
-    $("#meet-the-team .popup").removeClass("active");
-  }
+// Gsap animation
+$(function () {
+  let cards = gsap.utils.toArray(".stackCard");
+  let stickDistance = 0;
+  let lastCardST = ScrollTrigger.create({
+    trigger: cards[cards.length - 1],
+    start: "center center",
+  });
+  cards.forEach((card, index) => {
+    var scale = 1 - (cards.length - index) * 0.05;
+    console.log(scale);
+    let scaleDown = gsap.to(card, {
+      scale: scale,
+      "transform-origin": '"50% ' + (lastCardST.start + stickDistance) + '"',
+    });
+    ScrollTrigger.create({
+      trigger: card,
+      start: "center center",
+      end: () => lastCardST.start + stickDistance,
+      pin: true,
+      markers: false,
+      pinSpacing: false,
+      ease: "none",
+      animation: scaleDown,
+      toggleActions: "restart none none reverse",
+    });
+  });
 });
