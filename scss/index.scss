@@ -1,0 +1,25 @@
+@import "./font";
+// @import "./reset";
+@import "./variable";
+@import "./mixin";
+@import "./common";
+@import "./header";
+@import "./footer";
+@import "./homepage";
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #1A2032;
+}
+
+@media (max-width: 1536px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}
