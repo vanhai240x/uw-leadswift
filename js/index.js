@@ -45,6 +45,8 @@ $(document).ready(() => {
     arrows: false,
   });
   scroolDown();
+
+  new WOW().init();
 });
 
 function scroolDown() {
