@@ -14,7 +14,7 @@
   }
   &.active {
     top: 0;
-    padding: 15px 0;
+    padding: 15px;
   }
   .left {
     h1 {
@@ -23,21 +23,95 @@
       font-weight: 600;
       margin-left: 17px;
       letter-spacing: -1px;
-      background: linear-gradient(225.4deg, #f8a4d8 5.43%, #6c63ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    }
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    &:hover {
+      span {
+        width: 40px !important;
+      }
+    }
+    span {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #6C63FF;
+      transition: 0.3s ease-in-out;
+      &.line-1 {
+        width: 50%;
+        margin-left: auto;
+      }
+      &.line-2 {
+        margin: 8px 0;
+      }
+      &.line-3 {
+        width: 50%;
+        margin-right: auto;
+      }
+    }
+  }
+  .menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(310deg, #f8a4d8 5.43%, #6c63ff 100%);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    pointer-events: none;
+    &.active {
+      z-index: 99;
+      opacity: 1;
+      pointer-events: inherit;
+    }
+    .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      cursor: pointer;
+      &::before {
+        display: inline-block;
+        content: "\00d7";
+        color: $maize-yellow;
+        font-size: 60px;
+        font-weight: 100;
+        line-height: 22px;
+      }
+    }
+    .container {
+      height: calc(100vh - 126px);
+      .btn {
+        width: 240px;
+        height: 60px;
+        border-radius: 30px;
+      }
+      .btn-gradient {
+        border: 1px solid #6c63ff;
+      }
     }
   }
 }
 
-@media (max-width: 992px) {
-  .header .menu-fixed .left-side {
-    width: 50%;
-  }
-}
+@media (max-width: 1536px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
   .header {
+    padding: 15px;
+    .burger {
+      display: flex;
+    }
   }
 }
+
+@media (max-width: 640px) {}

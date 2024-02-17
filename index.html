@@ -41,24 +41,53 @@
     <!-- Start: Header -->
     <div class="header">
       <div class="container mx-auto flex justify-between items-center">
-        <div class="left flex justify-between items-center md:lg:pr-16 md:lg:pl-4 pr-6">
+        <div class="left flex justify-between items-center lg:pr-16 lg:pl-4 pr-6">
           <img src="./image/icons/logo.svg" alt="logo" />
-          <h1 class="md:lg:text-4xl text-3xl anek-latin">Leadswift</h1>
+          <h1 class="text-linear-pink lg:text-4xl text-3xl anek-latin">Leadswift</h1>
         </div>
-        <div class="center flex">
-          <a href="#" class="md:lg:p-2 mx-2 md:lg:mx-3 hover:underline"
+        <div class="center hidden md:flex">
+          <a href="#" class="p-1 mx-1 lg:p-2 lg:mx-3 hover:underline"
             >Benefits</a
           >
-          <a href="#" class="md:lg:p-2 mx-2 md:lg:mx-3 hover:underline"
+          <a href="#" class="p-1 mx-1 lg:p-2 lg:mx-3 hover:underline"
             >Vorlagen</a
           >
-          <a href="#" class="md:lg:p-2 mx-2 md:lg:mx-3 hover:underline"
+          <a href="#" class="p-1 mx-1 lg:p-2 lg:mx-3 hover:underline"
             >Preise</a
           >
         </div>
-        <div class="right flex items-center">
+        <div class="right hidden md:flex items-center">
           <button class="btn text-lg mr-4 inter">Login</button>
           <button class="btn btn-gradient inter">Kostenfrei testen -></button>
+        </div>
+        <div class="burger">
+          <span class="line-1"></span>
+          <span class="line-2"></span>
+          <span class="line-3"></span>
+        </div>
+        <div class="menu-fixed px-6 py-8">
+          <div class="close"></div>
+          <div class="container mx-auto">
+            <div class="left mb-12 flex items-center">
+              <img src="./image/icons/logo-white.svg" alt="logo" />
+              <h1 class="md:text-4xl text-3xl anek-latin text-white">Leadswift</h1>
+            </div>
+            <div class="center flex flex-col text-white mb-12">
+              <a href="#" class="py-2 mb-3 hover:underline"
+                >Benefits</a
+              >
+              <a href="#" class="py-2 mb-3 hover:underline"
+                >Vorlagen</a
+              >
+              <a href="#" class="py-2 mb-3 hover:underline"
+                >Preise</a
+              >
+            </div>
+            <div class="right flex flex-col justify-center items-center">
+              <button class="btn text-lg inter mb-4">Login</button>
+              <button class="btn btn-gradient inter">Kostenfrei testen -></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +97,7 @@
     <div id="homepage">
       <div class="intro pb-10">
         <div class="context text-center container mx-auto py-20">
-          <h2 class="text-7xl leading-tight font-normal tracking-[4px]">
+          <h2 class="text-5xl md:text-7xl leading-tight font-normal tracking-[2px] md:tracking-[4px]">
             Erreiche Deine Kunden <br>
             <b>direkt in <span class="text-linear-pink">WhatsApp</span></b>
           </h2>
@@ -77,8 +106,8 @@
             <br />
             Ohne Programmierkenntnisse I Ohne eignes Design I Komplett Automatisiert
           </p>
-          <div class="flex justify-center">
-            <button class="btn btn-gradient text-xl font-bold mr-5">kostenlos testen</button>
+          <div class="flex justify-center flex-col md:flex-row max-w-[300px] md:max-w-none mx-auto">
+            <button class="btn btn-gradient text-xl font-bold mr-0 mb-4 md:mb-0 md:mr-5">kostenlos testen</button>
             <button class="btn btn-blue text-lg font-bold">Video ansehen</button>
           </div>
         </div>
@@ -112,27 +141,27 @@
 
       <div class="product pt-8 pb-10">
         <div class="container mx-auto px-5">
-          <h3 class="font-bold text-5xl leading-tight text-center tracking-[2px] max-w-[980px] mx-auto mb-16">
+          <h3 class="font-bold text-4xl md:text-5xl leading-tight text-center tracking-[2px] max-w-[980px] mx-auto mb-16">
             <span class="text-linear-pink">WhatsApp-Funnel</span>
             für die digitalisierung Ihres Unternehmen
           </h3>
           <div class="bg-pink">
             <div class="text-white">
-              <h4 class="text-5xl tracking-[2px] mb-5">Wieso brauchst du einen <b>WhatsApp Funnel?</b></h4>
+              <h4 class="text-4xl md:text-5xl tracking-[2px] mb-5">Wieso brauchst du einen <b>WhatsApp Funnel?</b></h4>
               <ul>
-                <li class="text-[21px] mb-3">
+                <li class="text-lg md:text-[21px] mb-3">
                   <img src="./image/icons/checked.svg" alt="" class="inline-block mr-3">
                   Erziele <b>mehr Ergebnisse</b> mit Deinen ads
                 </li>
-                <li class="text-[21px] mb-3">
+                <li class="text-lg md:text-[21px] mb-3">
                   <img src="./image/icons/checked.svg" alt="" class="inline-block mr-3">
                   Bis zu 50% höhere Klickrate
                 </li>
-                <li class="text-[21px] mb-3">
+                <li class="text-lg md:text-[21px] mb-3">
                   <img src="./image/icons/checked.svg" alt="" class="inline-block mr-3">
                   Bis zu 98% höhere Öffnungrate
                 </li>
-                <li class="text-[21px] mb-4">
+                <li class="text-lg md:text-[21px] mb-4">
                   <img src="./image/icons/checked.svg" alt="" class="inline-block mr-3">
                   Messe Deinen <b>Erfolg</b>
                 </li>
@@ -141,14 +170,14 @@
             </div>
             <img src="./image/homepage/whatsapp.png" alt="">
           </div>
-          <div class="flex justify-between">
+          <div class="flex justify-between flex-col md:flex-row">
             <div class="bg-black flex flex-col justify-center items-center">
-              <h4 class="text-linear-pink text-5xl mb-6 tracking-[2px]"><b>Demo Video</b></h4>
+              <h4 class="text-linear-pink text-4xl md:text-5xl mb-6 tracking-[2px]"><b>Demo Video</b></h4>
               <img src="./image/icons/play.svg" alt="">
               <button class="btn btn-gradient mt-7">ansehen</button>
             </div>
             <div class="bg-black flex flex-col justify-center items-center">
-              <h4 class="text-linear-pink text-5xl text-center tracking-[2px]">Jetzt testen in <br><b>WhatsApp</b></h4>
+              <h4 class="text-linear-pink text-4xl md:text-5xl text-center tracking-[2px]">Jetzt testen in <br><b>WhatsApp</b></h4>
               <button class="btn btn-gradient mt-7">WhatsApp Demo</button>
             </div>
           </div>
@@ -157,30 +186,30 @@
 
       <div class="user pt-8">
         <div class="container mx-auto">
-          <h3 class="text-5xl leading-tight text-center mb-2 font-bold tracking-[2px]">
+          <h3 class="text-4xl md:text-5xl leading-tight text-center mb-2 font-bold tracking-[2px]">
             58+ Millionen User benutzen <br><span class="text-linear-pink">WhatsApp</span> in Deutschland
           </h3>
           <p class="text-lg text-center mb-16">Holen Sie Ihre Interessenten da ob, wo die sich aufhalten. <br>Auf persönlichere und effizientere Art und weise</p>
           <button class="btn btn-gradient block mx-auto mb-14 text-xl">kostenlos testen</button>
           <div class="cards text-center">
             <div class="item flex flex-col justify-center items-center text-white">
-              <h4 class="text-bold text-5xl mb-7 tracking-[4px]">Zeitersparnis durch Automatisierung:</h4>
+              <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Zeitersparnis durch Automatisierung:</h4>
               <p class="text-lg">Keine Notwendigkeit, eigene Websites oder Funnel zu entwerfen.</p>
             </div>
             <div class="item flex flex-col justify-center items-center text-white">
-              <h4 class="text-bold text-5xl mb-7 tracking-[4px]">Höhere Konversionsraten</h4>
+              <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Höhere Konversionsraten</h4>
               <p class="text-lg max-w-[682px] mx-auto">Nutzung von WhatsApp erhöht die Wahrscheinlichkeit, dass Leads zu Kunden werden, durch persönlichere Interaktion.</p>
             </div>
             <div class="item flex flex-col justify-center items-center text-white">
-              <h4 class="text-bold text-5xl mb-7 tracking-[4px]">Niedrigere Abbruchraten</h4>
+              <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Niedrigere Abbruchraten</h4>
               <p class="text-lg max-w-[658px] mx-auto">Erinnerungsfunktionen reduzieren die Wahrscheinlichkeit, dass Interessenten den Kontaktvorgang abbrechen.</p>
             </div>
             <div class="item flex flex-col justify-center items-center text-white">
-              <h4 class="text-bold text-5xl mb-7 tracking-[4px]">Keine zusätzlichen Hosting- oder Domainkosten:</h4>
+              <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]">Keine zusätzlichen Hosting- oder Domainkosten:</h4>
               <p class="text-lg">Da der Service über WhatsApp läuft, entfallen die Kosten für Webhosting und Domain-Anmeldung.</p>
             </div>
             <div class="item flex flex-col justify-center items-center text-white">
-              <h4 class="text-bold text-5xl mb-7 tracking-[4px]">Flexible Anwendungsmöglichkeiten</h4>
+              <h4 class="text-bold text-3xl md:text-5xl mb-7 tracking-[1px] md:tracking-[4px]" style="word-break: break-word;">Flexible Anwendungsmöglichkeiten</h4>
               <p class="text-lg">Da der Service über WhatsApp läuft, entfallen die Kosten für Webhosting und Domain-Anmeldung.</p>
               <button class="btn btn-gradient mt-6">kostenfrei testen</button>
             </div>
@@ -190,11 +219,11 @@
 
       <div class="use pt-12 pb-44">
         <div class="container mx-auto px-4">
-          <h3 class="text-5xl leading-tight text-center mb-3 font-bold tracking-[2px]">
+          <h3 class="text-4xl md:text-5xl leading-tight text-center mb-3 font-bold tracking-[2px]">
             Benutze unsere <br><span class="text-linear-pink">WhatsApp</span> Vorlagen
           </h3>
           <p class="text-lg text-center mb-16">Ihr könnt die Funnelvorlagen benutzen und anpassen wie Ihr wollt.</p>
-          <div class="flex justify-between text-center">
+          <div class="flex justify-between text-center flex-col md:flex-row">
             <div class="bg-black flex flex-col justify-center items-center">
               <h4 class="text-linear-pink text-5xl leading-[52px] tracking-[2px]"><b>Anfragen</b> <br>Vorlage</h4>
               <button class="btn btn-gradient mt-6">In WhatsApp testen</button>
@@ -213,14 +242,14 @@
         <img src="./image/homepage/functions-future.png" alt="">
       </div>
 
-      <div class="client-say">
-        <div class="container mx-auto flex items-center justify-between">
+      <div class="client-say pt-16 md:pt-0">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div class="max-w-[302px]">
             <h4 class="text-3xl font-bold tracking-[2px] mb-4">Don’t just take our word for it</h4>
             <p>Read what our clients have to say.</p>
           </div>
-          <div class="comments flex">
-            <div class="left mr-5">
+          <div class="comments flex mt-5 md:mt-0 flex-col md:flex-row">
+            <div class="left px-4 md:px-0 mr-0 md:mr-5">
               <div class="anim-1 py-[15px]">
                 <div class="item">
                   <p class="mb-8">"The WhatsApp Funnel has been a game-changer for our business. The automated messaging and segmentation features have saved us time and effort, allowing us to focus on delivering a top-notch customer experience. Highly recommended!"</p>
@@ -358,11 +387,11 @@
 
       <div class="price py-36">
         <div class="container mx-auto">
-          <h3 class="text-5xl leading-tight text-center mb-4 font-bold tracking-[2px]">
+          <h3 class="text-4xl md:text-5xl leading-tight text-center mb-4 font-bold tracking-[2px]">
             Flexible WhatsApp Funnel
           </h3>
           <p class="text-lg text-center max-w-[1062px] mx-auto mb-24">Discover flexible pricing options for WhatsApp Funnel that fit your budget and business needs. Choose the plan that suits you and unlock the power of enhanced customer engagement today!</p>
-          <div class="flex justify-between">
+          <div class="flex justify-between flex-col md:flex-row">
             <div class="item company">
               <button class="btn h-[44px] text-xl px-3 mb-4">Company</button>
               <p class="text-[#8C949D] h-32">Optimal für den Start in deinem WhatsApp-Funnel.</p>
@@ -518,7 +547,7 @@
         </div>
       </div>
 
-      <div class="faq py-48">
+      <div class="faq py-14 md:py-48">
         <div class="container mx-auto px-8">
           <h3 class="text-4xl text-center mb-6 font-bold inter">
             FAQ
@@ -562,7 +591,7 @@
               </div>
             </div>
           </div>
-          <div class="bg-[#F9FAFB] rounded-2xl pt-7 pb-10 flex flex-col items-center inter">
+          <div class="bg-[#F9FAFB] rounded-2xl pt-7 pb-10 px-4 flex flex-col items-center inter">
             <img src="./image/homepage/avatar-group.png" alt="">
             <p class="inter font-semibold text-xl mt-7 mb-3">Still have questions?</p>
             <p class="inter text-[#475467] text-lg mb-8">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
@@ -610,13 +639,13 @@
         centerMode: true,
         slidesToShow: 1,
         centerPadding: 'calc((100% - 890px) / 2)',
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              centerPadding: 'calc((100% - 750px) / 2)',
+              centerPadding: 'calc((100% - 725px) / 2)',
             }
           },
         ]

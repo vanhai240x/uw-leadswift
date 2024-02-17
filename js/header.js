@@ -1,4 +1,4 @@
-$(".header .right .burger").click(() => {
+$(".header .burger").click(() => {
   $(".header .menu-fixed").addClass("active");
 });
 
