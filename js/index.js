@@ -31,7 +31,8 @@ $(".slider-mobile").slick({
     },
   ],
 });
-// Gsap animation
+
+// Gsap animation - card scroll
 $(function () {
   let cards = gsap.utils.toArray(".stackCard");
   let stickDistance = 0;
@@ -41,7 +42,6 @@ $(function () {
   });
   cards.forEach((card, index) => {
     var scale = 1 - (cards.length - index) * 0.05;
-    console.log(scale);
     let scaleDown = gsap.to(card, {
       scale: scale,
       "transform-origin": '"50% ' + (lastCardST.start + stickDistance) + '"',
@@ -58,4 +58,19 @@ $(function () {
       toggleActions: "restart none none reverse",
     });
   });
+});
+
+// Add smooth scrolling to all links
+$("a").on("click", function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $(".header .menu-fixed").removeClass("active");
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 78,
+      },
+      800
+    );
+  }
 });
