@@ -74,3 +74,12 @@ $("a").on("click", function (event) {
     );
   }
 });
+
+// Sign up
+$(".slider-signup").slick({
+  dots: true,
+  arrows: true,
+  slidesToShow: 1,
+  // autoplay: true,
+  autoplaySpeed: 5000,
+});

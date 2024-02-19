@@ -158,23 +158,21 @@
 // End: Collapse
 
 // Start: Common
-@import "./variable";
 .slick-next,
 .slick-prev {
   width: 56px;
   height: 56px;
   font-size: 0;
-  background: $moonstone-blue;
   border: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   &::before {
     content: "";
-    border: solid $white;
+    border: solid #fff;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 7px;
+    padding: 5px;
     transform: rotate(-45deg);
     position: absolute;
     top: 50%;

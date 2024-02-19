@@ -178,7 +178,6 @@
   width: 56px;
   height: 56px;
   font-size: 0;
-  background: #47A8BD;
   border: none;
   position: absolute;
   top: 50%;
@@ -187,10 +186,10 @@
 .slick-next::before,
 .slick-prev::before {
   content: "";
-  border: solid #ffffff;
+  border: solid #fff;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 7px;
+  padding: 5px;
   transform: rotate(-45deg);
   position: absolute;
   top: 50%;
@@ -706,6 +705,62 @@
     transform: translateY(-250%);
   }
 }
+#sign-up .left-side .input {
+  width: 100%;
+  height: 44px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  margin-top: 5px;
+}
+#sign-up .left-side .btn {
+  height: 44px;
+  border: 1px solid #d0d5dd;
+}
+#sign-up .left-side .btn.btn-gradient {
+  border: 1px solid #7f56d9;
+}
+#sign-up .right-side {
+  background: linear-gradient(225.4deg, #f8a4d8 5.43%, #6c63ff 100%);
+  border-radius: 20px;
+}
+#sign-up .right-side .slider-signup img {
+  display: inline;
+}
+#sign-up .right-side .slick-dots {
+  display: flex;
+  justify-content: center;
+}
+#sign-up .right-side .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #9e77ed;
+  border-radius: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+#sign-up .right-side .slick-dots li.slick-active {
+  background: #ffffff;
+}
+#sign-up .right-side .slick-dots li button {
+  display: none;
+}
+#sign-up .right-side .slick-prev {
+  top: unset;
+  bottom: -23px;
+  right: calc(50% + 110px);
+  transform: scaleX(-1);
+}
+#sign-up .right-side .slick-next {
+  top: unset;
+  bottom: -23px;
+  left: calc(50% + 110px);
+  transform: none;
+}
+
 html,
 body {
   font-family: "DM Sans", sans-serif;
