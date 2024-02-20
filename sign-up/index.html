@@ -1,240 +1,142 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="shortcut icon" type="image/png" href="../image/icons/logo.svg" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" type="image/png" href="../image/icons/logo.svg" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <!-- Slickjs -->
-    <link rel="stylesheet" href="../css/slick/slick.css" />
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Wowjs -->
-    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
-      rel="stylesheet"
-    />
+  <!-- Slickjs -->
+  <link rel="stylesheet" href="../css/slick/slick.css" />
 
-    <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!-- Wowjs -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="../css/index.css" />
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
-    <title>Leadswift - Sign Up</title>
-  </head>
+  <link rel="stylesheet" href="../css/index.css" />
 
-  <body>
-    <!-- Start: Sign Up Page -->
-    <div id="sign-up" class="min-h-screen p-4 flex">
-      <div
-        class="left-side w-full md:w-1/2 md:p-4 md:pr-8 flex flex-col md:justify-between"
-      >
-        <div class="head pt-8 md:pt-0">
-          <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="left flex items-center">
-              <img src="../image/icons/logo.svg" alt="logo" class="w-[25px]" />
-              <h1
-                class="text-linear-pink text-2xl anek-latin font-semibold tracking-[-1px] ml-3"
-              >
-                Leadswift
-              </h1>
-            </a>
-          </div>
-        </div>
-        <div class="body my-10 md:my-20 w-full max-w-[360px] mx-auto inter">
-          <h2
-            class="font-semibold text-2xl md:text-4xl mb-4 tracking-[-1px] wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            Account erstellen
-          </h2>
-          <p class="text-[#475467] mb-7 wow fadeInUp" data-wow-delay=".4s">
-            Testphase I Ohne Laufzeit I Ohne Kreditkarte
-          </p>
-          <div class="form">
-            <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".5s">
-              <label
-                for="name"
-                class="text-sm font-medium text-[#344054] cursor-pointer"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="input inter block"
-                placeholder="Dein Name"
-              />
-            </div>
-            <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".6s">
-              <label
-                for="email"
-                class="text-sm font-medium text-[#344054] cursor-pointer"
-                >E-Mail*</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="input inter block"
-                placeholder="Deine E-Mail"
-              />
-            </div>
-            <div class="form-group mb-6 wow fadeInUp" data-wow-delay=".7s">
-              <label
-                for="password"
-                class="text-sm font-medium text-[#344054] cursor-pointer"
-                >Passwort*</label
-              >
-              <input
-                type="password"
-                id="password"
-                class="input inter block"
-                placeholder="Dein Passwort"
-              />
-              <p class="inter text-sm text-[#475467] mt-2">
-                Mindestens 8 Zeichen
-              </p>
-            </div>
-            <button
-              class="btn btn-gradient inter font-semibold btn-abs w-full mb-4 wow fadeInUp"
-              data-wow-delay=".8s"
-            >
-              Account erstellen
-            </button>
-            <button
-              class="btn w-full flex items-center justify-center mb-8 wow fadeInUp"
-              data-wow-delay=".9s"
-            >
-              <img src="../image/icons/google.svg" alt="" />
-              <span class="ml-1">Sign up with Google</span>
-            </button>
-          </div>
-          <p
-            class="text-center text-[#475467] inter text-sm wow fadeInUp"
-            data-wow-delay="1s"
-          >
-            Hast Du schon ein Account?
-            <a href="#" class="font-semibold text-[#6941C6] hover:underline"
-              >Anmelden</a
-            >
-          </p>
-        </div>
-        <div
-          class="foot hidden md:flex justify-between text-sm inter text-[#475467]"
-        >
-          <p>© Leadswift 2024</p>
-          <a
-            href="mailto:help@leadswift.de"
-            class="flex items-center hover:underline"
-          >
-            <img src="../image/icons/email.svg" alt="" class="mr-2" />
-            help@leadswift.de
+  <title>Leadswift - Sign Up</title>
+</head>
+
+<body>
+  <!-- Start: Sign Up Page -->
+  <div id="sign-up" class="min-h-screen p-4 flex">
+    <div class="left-side w-full md:w-1/2 md:p-4 md:pr-8 flex flex-col md:justify-between">
+      <div class="head pt-8 md:pt-0">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="/" class="left flex items-center">
+            <img src="../image/icons/logo.svg" alt="logo" class="w-[25px]" />
+            <h1 class="text-linear-pink text-2xl anek-latin font-semibold tracking-[-1px] ml-3">
+              Leadswift
+            </h1>
           </a>
         </div>
       </div>
-      <div class="right-side w-1/2 hidden md:flex items-center text-center">
-        <div class="slider-signup w-full relative">
-          <div class="item">
-            <img
-              src="../image/sign-up/slide-image-1.png"
-              alt=""
-              class="wow fadeInUp"
-              data-wow-delay="1.5s"
-            />
-            <h3
-              class="text-2xl font-black text-white mb-2 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              Leadgenerierung 3.0
-            </h3>
-            <p
-              class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              Powerful, self-serve product and growth analytics to help you
-              convert, engage, and retain more users.
+      <div class="body my-10 md:my-20 w-full max-w-[360px] mx-auto inter">
+        <h2 class="font-semibold text-2xl md:text-4xl mb-4 tracking-[-1px] wow fadeInUp" data-wow-delay=".3s">
+          Account erstellen
+        </h2>
+        <p class="text-[#475467] mb-7 wow fadeInUp" data-wow-delay=".4s">
+          Testphase I Ohne Laufzeit I Ohne Kreditkarte
+        </p>
+        <div class="form">
+          <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".5s">
+            <label for="name" class="text-sm font-medium text-[#344054] cursor-pointer">Name</label>
+            <input type="text" id="name" class="input inter block" placeholder="Dein Name" />
+          </div>
+          <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".6s">
+            <label for="email" class="text-sm font-medium text-[#344054] cursor-pointer">E-Mail*</label>
+            <input type="email" id="email" class="input inter block" placeholder="Deine E-Mail" />
+          </div>
+          <div class="form-group mb-6 wow fadeInUp" data-wow-delay=".7s">
+            <label for="password" class="text-sm font-medium text-[#344054] cursor-pointer">Passwort*</label>
+            <input type="password" id="password" class="input inter block" placeholder="Dein Passwort" />
+            <p class="inter text-sm text-[#475467] mt-2">
+              Mindestens 8 Zeichen
             </p>
           </div>
-          <div class="item">
-            <img
-              src="../image/sign-up/slide-image-1.png"
-              alt=""
-              class="wow fadeInUp"
-              data-wow-delay="1.5s"
-            />
-            <h3
-              class="text-2xl font-black text-white mb-2 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              Leadgenerierung 3.0
-            </h3>
-            <p
-              class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              Powerful, self-serve product and growth analytics to help you
-              convert, engage, and retain more users.
-            </p>
-          </div>
-          <div class="item">
-            <img
-              src="../image/sign-up/slide-image-1.png"
-              alt=""
-              class="wow fadeInUp"
-              data-wow-delay="1.5s"
-            />
-            <h3
-              class="text-2xl font-black text-white mb-2 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              Leadgenerierung 3.0
-            </h3>
-            <p
-              class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              Powerful, self-serve product and growth analytics to help you
-              convert, engage, and retain more users.
-            </p>
-          </div>
-          <div class="item">
-            <img
-              src="../image/sign-up/slide-image-1.png"
-              alt=""
-              class="wow fadeInUp"
-              data-wow-delay="1.5s"
-            />
-            <h3
-              class="text-2xl font-black text-white mb-2 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              Leadgenerierung 3.0
-            </h3>
-            <p
-              class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              Powerful, self-serve product and growth analytics to help you
-              convert, engage, and retain more users.
-            </p>
-          </div>
+          <button class="btn btn-gradient inter font-semibold btn-abs w-full mb-4 wow fadeInUp" data-wow-delay=".8s">
+            Account erstellen
+          </button>
+          <button class="btn w-full flex items-center justify-center mb-8 wow fadeInUp" data-wow-delay=".9s">
+            <img src="../image/icons/google.svg" alt="" />
+            <span class="ml-1">Sign up with Google</span>
+          </button>
+        </div>
+        <p class="text-center text-[#475467] inter text-sm wow fadeInUp" data-wow-delay="1s">
+          Hast Du schon ein Account?
+          <a href="#" class="font-semibold text-[#6941C6] hover:underline">Anmelden</a>
+        </p>
+      </div>
+      <div class="foot hidden md:flex justify-between text-sm inter text-[#475467]">
+        <p>© Leadswift 2024</p>
+        <a href="mailto:help@leadswift.de" class="flex items-center hover:underline">
+          <img src="../image/icons/email.svg" alt="" class="mr-2" />
+          help@leadswift.de
+        </a>
+      </div>
+    </div>
+    <div class="right-side w-1/2 hidden md:flex items-center text-center">
+      <div class="slider-signup w-full relative">
+        <div class="item">
+          <img src="../image/sign-up/slide-image-1.png" alt="" class="wow fadeInUp" data-wow-delay="1.5s" />
+          <h3 class="text-2xl font-black text-white mb-2 wow fadeInUp" data-wow-delay=".5s">
+            Leadgenerierung 3.0
+          </h3>
+          <p class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp" data-wow-delay=".7s">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users.
+          </p>
+        </div>
+        <div class="item">
+          <img src="../image/sign-up/slide-image-1.png" alt="" class="wow fadeInUp" data-wow-delay="1.5s" />
+          <h3 class="text-2xl font-black text-white mb-2 wow fadeInUp" data-wow-delay=".5s">
+            Leadgenerierung 3.0
+          </h3>
+          <p class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp" data-wow-delay=".7s">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users.
+          </p>
+        </div>
+        <div class="item">
+          <img src="../image/sign-up/slide-image-1.png" alt="" class="wow fadeInUp" data-wow-delay="1.5s" />
+          <h3 class="text-2xl font-black text-white mb-2 wow fadeInUp" data-wow-delay=".5s">
+            Leadgenerierung 3.0
+          </h3>
+          <p class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp" data-wow-delay=".7s">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users.
+          </p>
+        </div>
+        <div class="item">
+          <img src="../image/sign-up/slide-image-1.png" alt="" class="wow fadeInUp" data-wow-delay="1.5s" />
+          <h3 class="text-2xl font-black text-white mb-2 wow fadeInUp" data-wow-delay=".5s">
+            Leadgenerierung 3.0
+          </h3>
+          <p class="text-lg font-medium text-[#E9D7FE] max-w-[456px] mx-auto mb-12 wow fadeInUp" data-wow-delay=".7s">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users.
+          </p>
         </div>
       </div>
     </div>
-    <!-- End: Sign Up Page -->
+  </div>
+  <!-- End: Sign Up Page -->
 
-    <!-- jQuery first, then Popper -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="../js/slick/slick.min.js"></script>
-    <script src="../js/header.js"></script>
-    <script src="../js/index.js"></script>
-  </body>
+  <!-- jQuery first, then Popper -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="../js/slick/slick.min.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>
