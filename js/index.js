@@ -80,6 +80,31 @@ $(".slider-signup").slick({
   dots: true,
   arrows: true,
   slidesToShow: 1,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 5000,
+});
+
+// Forgot password
+setTimeout(() => {
+  $('#input-number-1').focus();
+}, 1000);
+$('#input-number-1').on('input',function(e){
+  if (e.target.value) {
+    $('#input-number-2').focus();
+  }
+});
+$('#input-number-2').on('input',function(e){
+  if (e.target.value) {
+    $('#input-number-3').focus();
+  }
+});
+$('#input-number-3').on('input',function(e){
+  if (e.target.value) {
+    $('#input-number-4').focus();
+  }
+});
+$('#input-number-4').on('input',function(e){
+  if (e.target.value) {
+    $('#btn-send').focus();
+  }
 });
