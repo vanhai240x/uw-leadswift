@@ -255,5 +255,12 @@
   .slick-prev {
     background: none;
   }
+  .collapsible {
+    font-size: 16px;
+    line-height: 22px;
+    &::after {
+      top: 30px;
+    }
+  }
 }
 // End: Common
