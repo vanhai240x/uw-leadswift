@@ -583,10 +583,10 @@
   animation: animate2 40s -20s linear infinite;
 }
 #homepage .client-say .comments .anim-3 {
-  animation: animate3 40s -40s linear infinite;
+  animation: animate3 60s -60s linear infinite;
 }
 #homepage .client-say .comments .anim-4 {
-  animation: animate4 40s -20s linear infinite;
+  animation: animate4 60s -30s linear infinite;
 }
 #homepage .price .item {
   width: calc(33.33% - 20px);
