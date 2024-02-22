@@ -143,6 +143,7 @@
         #f9f5ff 0%,
         rgba(249, 245, 255, 0) 100%
       );
+      z-index: 1;
     }
     &::after {
       content: "";
@@ -210,13 +211,10 @@
         left: 24px;
         bottom: 96px;
       }
-      &.company {
+      &.bg-gradient {
         background: linear-gradient(0deg, #fffafd 0%, #ecebff 100%);
         .btn.mb-4 {
           border: none;
-        }
-        .btn.btn-abs {
-          border: 1px solid #1a2032;
         }
       }
       .btn-abs {
@@ -224,6 +222,11 @@
         position: absolute;
         bottom: 24px;
         left: 24px;
+      }
+    }
+    #yearly {
+      .item {
+        width: calc(25% - 15px);
       }
     }
   }
@@ -268,6 +271,9 @@
   }
 }
 
+@media (max-width: 1280px) {
+}
+
 @media (max-width: 1024px) {
   #homepage {
     .intro .slider-mobile .item {
@@ -279,6 +285,10 @@
         width: 340px;
         right: 20px;
       }
+    }
+    .price .item {
+      width: calc(50% - 15px) !important;
+      margin-bottom: 30px;
     }
     .product .bg-pink {
       flex-direction: column-reverse;
@@ -363,7 +373,7 @@
     }
     .price {
       .item {
-        width: 90%;
+        width: 90% !important;
         margin: 0 auto 20px;
       }
     }
